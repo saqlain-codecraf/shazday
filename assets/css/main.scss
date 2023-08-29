@@ -137,8 +137,9 @@ span {
   }
 }
 nav a{
-    font-size: 0.9em !important;
-    font-weight: 800 !important;
+    font-size: 13px !important;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
     font-family: Source Sans Pro,Arial,sans-serif !important;
 }
 .nav-items-container{
@@ -940,8 +941,8 @@ h1,h2,h3,h4,h5 {
       top: 0;
       left: 0;
       z-index: 5;
-      width: 361px;
-      height: 276px;
+      width: 330px;
+      height: 243px;  
       object-position: top center;
       object-fit: cover;
       position: absolute;
@@ -1393,6 +1394,10 @@ h1,h2,h3,h4,h5 {
 }
 
 //  products style end
+
+// tasteful component style start 
+
+// tasteful component style end
 
 @media (min-width: 1400px){
   .story-container > p{
@@ -1846,10 +1851,6 @@ h1,h2,h3,h4,h5 {
   }
 }
 
-.checkbox-wrapper {
-
-}
-
 .products-list {
   display: flex;
   flex-wrap: wrap;
@@ -1860,27 +1861,12 @@ h1,h2,h3,h4,h5 {
   @include breakpoint(tablet-lg) {
     margin-right: -63px;
   }
-  .product-item {
-    width: 361px;
-    margin-bottom: 50px;
-    margin-right: 15px;
-    @include breakpoint(phone) {
-      margin-right: 33px;
-      margin-bottom: 55px;
-      width: 362px;
-    }
-    @include breakpoint(tablet-lg) {
-      margin-right: 63px;
-      margin-bottom: 85px;
-      width: 362px;
-    }
-  }
 }
 .product-item-container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 38px;
   margin-top: 34px;
   max-width: 1310px;
   margin: auto;

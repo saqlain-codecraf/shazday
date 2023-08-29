@@ -176,7 +176,7 @@ const IndexPage = () => {
       <StoryContainer />
       <section className='products-section'>
         <div className='products-container'>
-          {products && products.map((product:Product) => (
+          {products && products.map((product: Product) => (
             <ProductsList key={product.id} product={product} />
           ))}
         </div>

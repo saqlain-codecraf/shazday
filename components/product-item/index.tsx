@@ -5,7 +5,7 @@ import Link from 'next/link';
 // import { RootState } from 'store';
 import { ProductTypeList } from 'types';
 
-const ProductItem = ({ discount, images, id, name }: ProductTypeList) => {
+const ProductItem = ({ images, id, name, price }: ProductTypeList) => {
   // const dispatch = useDispatch();
   // const { favProducts } = useSelector((state: RootState) => state.user);
 
@@ -20,21 +20,20 @@ const ProductItem = ({ discount, images, id, name }: ProductTypeList) => {
   // }
 
   return (
-    <div className="product-item" style={{width: '362px'}}>
-      <div className="product__image">
+      <div className='tasteful-container'>
         {/* <button type="button" onClick={toggleFav} className={`btn-heart ${isFavourite ? 'btn-heart--active' : ''}`}><i className="icon-heart"></i></button> */}
 
           <a>
             <img src={images ? images[0] : ''} alt="dry fruits image" />
-            {discount &&
-              <span className="product__discount">{discount}%</span>
-            }
           </a>
-      </div>
-      <div className="product__description">
+      <div className="">
+        <p><i className='icon-cash'></i>{price}</p>
+        <h2>
         <Link href={`/product/${id}`}>
           {name}
           </Link>
+        </h2>
+      {/* </div> */}
       </div>
 
     </div>

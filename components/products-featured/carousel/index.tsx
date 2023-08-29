@@ -7,7 +7,7 @@ type ProductsCarouselType = {
 
 const ProductsCarousel = ({ products }: ProductsCarouselType) => {
   if (!products) { return <div>Loading</div> }
-  else { var requireProduct = products.slice(0, 6) }
+  else { var requireProduct = products.slice(0, 4) }
 
   return (
     <div className="product-item-container">
